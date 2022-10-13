@@ -1,3 +1,4 @@
+//FASE DI INPUT
 alert("inserisci sei numeri");
 alert("ti dirò qual'è il MAX e il MIN");
 
@@ -12,6 +13,12 @@ const numeri = [
 
                 ];
 
+
+//OPERAZIONE DI VERIFICA:
+
+
+        
+//FASE DI ELABORAZIONE DATI
 let max = numeri[0];
 let min = numeri[0];
 
@@ -23,4 +30,6 @@ for (let i = 0; i < (numeri.length); i++) {
     }
 }
 
+
+//FASE DI OUTPUT
 alert(`il max num è ${max}, il min num è ${min}`);
