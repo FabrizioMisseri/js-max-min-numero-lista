@@ -1,11 +1,14 @@
 //FASE DI INPUT & OPERAZIONE DI VERIFICA:
-alert("inserisci sei numeri");
-alert("ti dirò qual'è il MAX e il MIN");
+alert("algoritmo che restituisce il MAX e il MIN di un set numerico scelto dall' utente");
+let qnt = parseInt(prompt("Quanti numeri vuoi prendere in analisi?"));
+while (qnt % 1 !== 0) {
+    qnt = parseInt(prompt("non hai messo un numero. Perfavore inserisci quanti numeri vuoi analizzare"));
+}
 
 const numeri = [];
 let numero;
 
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < qnt; i++) {
     numero = parseInt(prompt("inserisci un numero"));
     while (numero % 1 !== 0) {
         numero = parseInt(prompt("non hai messo un numero. Perfavore inserisci un numero"));
