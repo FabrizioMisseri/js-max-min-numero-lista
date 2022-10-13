@@ -1,20 +1,17 @@
-//FASE DI INPUT
+//FASE DI INPUT & OPERAZIONE DI VERIFICA:
 alert("inserisci sei numeri");
 alert("ti dirò qual'è il MAX e il MIN");
 
-const numeri = [
+const numeri = [];
+let numero;
 
-                parseInt(prompt("inserisci numero 1")),
-                parseInt(prompt("inserisci numero 2")),
-                parseInt(prompt("inserisci numero 3")),
-                parseInt(prompt("inserisci numero 4")),
-                parseInt(prompt("inserisci numero 5")),
-                parseInt(prompt("inserisci numero 6"))
-
-                ];
-
-
-//OPERAZIONE DI VERIFICA:
+for (let i = 0; i < 6; i++) {
+    numero = parseInt(prompt("inserisci un numero"));
+    while (numero % 1 !== 0) {
+        numero = parseInt(prompt("non hai messo un numero. Perfavore inserisci un numero"));
+    }
+    numeri.push(numero);
+}
 
 
         
